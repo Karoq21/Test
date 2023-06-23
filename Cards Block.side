@@ -1,0 +1,139 @@
+{
+  "id": "60166825-c525-4537-8db9-70c88cb592ae",
+  "version": "2.0",
+  "name": "Cards Block",
+  "url": "https://idemo.bspb.ru",
+  "tests": [{
+    "id": "d313382e-a4f7-466f-9bfb-d349109de457",
+    "name": "Untitled",
+    "commands": [{
+      "id": "31c0c6e2-7a69-461b-b223-cc6b12178500",
+      "comment": "",
+      "command": "open",
+      "target": "/auth?response_type=code&client_id=1&redirect_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fsuccess&prefetch_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fprefetch&force_new_session=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a5361cf-b229-43aa-a344-8d4a4b5896e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1073x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfb8a8ff-a6d4-4ab2-8952-d35da9f23b12",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//button[@id='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65fa6bb7-b279-45d2-ad7b-12fba5f7391a",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-otp-button",
+      "targets": [
+        ["id=login-otp-button", "id"],
+        ["css=#login-otp-button", "css:finder"],
+        ["xpath=//button[@id='login-otp-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f96a687e-bcaf-456b-9d7b-53970701e910",
+      "comment": "",
+      "command": "click",
+      "target": "id=cards-overview-index",
+      "targets": [
+        ["id=cards-overview-index", "id"],
+        ["css=#cards-overview-index", "css:finder"],
+        ["xpath=//a[contains(text(),'Карты')]", "xpath:link"],
+        ["xpath=//a[@id='cards-overview-index']", "xpath:attributes"],
+        ["xpath=//li[@id='cards']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cards')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acdc41aa-636c-42c4-a672-fd3ca17b0fd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#card-details-ownbank-10068 .card-block > .link-title",
+      "targets": [
+        ["css=#card-details-ownbank-10068 .card-block > .link-title", "css:finder"],
+        ["xpath=//div[@id='card-details-ownbank-10068']/div[2]/div[2]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Заблокировать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a960e9-2f39-4e74-a62c-7d8acb26bf74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radio:nth-child(3) > .inline",
+      "targets": [
+        ["css=.radio:nth-child(3) > .inline", "css:finder"],
+        ["xpath=(//input[@name='reason'])[3]", "xpath:attributes"],
+        ["xpath=//fieldset[@id='block-card-reasons']/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e517ae-ddb5-4288-8c3a-85f121d3e863",
+      "comment": "",
+      "command": "click",
+      "target": "id=block-card",
+      "targets": [
+        ["id=block-card", "id"],
+        ["css=#block-card", "css:finder"],
+        ["xpath=//button[@id='block-card']", "xpath:attributes"],
+        ["xpath=//form[@id='card-block-form']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Заблокировать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abb8ce8e-d3b7-4c21-abf1-1a278854b53b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "78c0db89-0bac-41ec-b0cd-2064730b0472",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//button[@id='confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='confirmation-form']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Подтвердить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "55c98d71-ebe6-4d29-96b5-e761ed446b46",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d313382e-a4f7-466f-9bfb-d349109de457"]
+  }],
+  "urls": ["https://idemo.bspb.ru/"],
+  "plugins": []
+}
